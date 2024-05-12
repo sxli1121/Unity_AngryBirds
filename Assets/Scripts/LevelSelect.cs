@@ -49,7 +49,10 @@ public class LevelSelect : MonoBehaviour
     public void Selected(){
         if(isSelect){
             PlayerPrefs.SetString("nowLevel","level"+gameObject.name);
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(2);   
+            for (int i = 0; i < Display.displays.Length; i++){
+                Display.displays[i].Activate();
+            }
         }
     }
 

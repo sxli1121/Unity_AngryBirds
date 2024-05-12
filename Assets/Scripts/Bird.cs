@@ -94,12 +94,6 @@ public class Bird : MonoBehaviour
         
         }
 
-        // 主相机跟随
-        float posX=transform.position.x;//小鸟位置
-        Camera.main.transform.position=Vector3.Lerp(Camera.main.transform.position,
-        new Vector3(Mathf.Clamp(posX,-4,15),Camera.main.transform.position.y,Camera.main.transform.position.z),
-        smooth*Time.deltaTime);
-
 
         if(isFly){
             if(Input.GetMouseButtonDown(0)){//飞行过程中按下鼠标左键
@@ -117,7 +111,7 @@ public class Bird : MonoBehaviour
         Invoke("Next",5);
     }
 
-// 画皮筋的线
+    // 画皮筋的线
     void Line(){
         right.SetPosition(0,rightPos.position);
         right.SetPosition(1,transform.position);
@@ -133,7 +127,7 @@ public class Bird : MonoBehaviour
         Instantiate(boom,transform.position,Quaternion.identity);
         GameManager._instance.NextBird();
 
-    }
+   }
 
     private void OnCollisionEnter2D(Collision2D collision) {
         isFly=false;
