@@ -96,9 +96,8 @@ public class Bird : MonoBehaviour
 
 
         if(isFly){
-            if(Input.GetMouseButtonDown(0)){//飞行过程中按下鼠标左键
-                ShowSkill();
-            }
+            // 当鸟在飞行状态的时候不允许再次点击
+            return;
         }
     }
 
@@ -148,6 +147,7 @@ public class Bird : MonoBehaviour
         isFly=false;
 
     }
+
 
     public void Hurt(){
         render.sprite=hurt;
