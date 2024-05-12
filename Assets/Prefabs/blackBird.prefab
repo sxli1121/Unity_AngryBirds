@@ -122,7 +122,7 @@ SpringJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.12882829, y: 0.6980554}
+  m_ConnectedAnchor: {x: -6.0296364, y: 1.5522496}
   m_AutoConfigureDistance: 0
   m_Distance: 0.22
   m_DampingRatio: 0
@@ -184,16 +184,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d460d4fb095403042a2f77f3f466a3cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDis: 1.5
+  maxDis: 3
   sp: {fileID: 0}
   right: {fileID: 0}
   left: {fileID: 0}
   rightPos: {fileID: 0}
   leftPos: {fileID: 0}
   boom: {fileID: 2049427125715447659, guid: f3184d80ed9e0e14eafbdd52ca530eba, type: 3}
+  canMove: 0
   smooth: 3
   select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
   fly: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
+  isRelease: 0
   hurt: {fileID: 21300222, guid: 6a875913f1218c748bb441934b734eb8, type: 3}
   blocks: []
 --- !u!1 &5710941982589286087
